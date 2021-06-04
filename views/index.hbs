@@ -1,2 +1,19 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="container d-flex flex-column align-items-center">
+  <h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>
+  <ul class="text-align-center">
+    {{#each messages}}
+      <li class="message-item mb-4 p-3">
+        <div class="">
+          <h3>{{this.user}}</h3>
+          <p class="fs-6">{{this.text}}</p>
+        </div>
+        <p class="added fst-italic text-black-50">posted on: {{this.added}}</p>
+      </li>
+    {{/each}}
+    <div>
+      <a href="./new" class="btn btn-dark mb-4">POST MESSAGE</a>
+    </div>
+  </ul>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="container d-flex flex-column align-items-center">
+  <h1>New message</h1>
+  <form method="POST" action="/new" class="main-form p-4">
+    <div class="mb-3">
+      <label for="user" class="form-label">User</label>
+      <input
+        type="text"
+        id="user"
+        name="user"
+        class="form-control"
+        placeholder="I am..."
+        required
+      />
+    </div>
+    <div class="mb-3"> 
+      <label for="message" class="form-label">Message</label>
+      <input
+        type="text"
+        id="message"
+        name="message"
+        class="form-control"
+        placeholder="Hi..."
+        required
+      />
+    </div>
+    <div CLASS="d-flex align-items-center justify-content-between">
+      <input type="submit" class="btn btn-primary" />
+      <a href="./" class="btn btn-secondary">Back</a>
+    </div>
+  </form>
+</div>

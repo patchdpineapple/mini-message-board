@@ -1,8 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/* INDEX */
+.message-item {
+  min-width: 450px;
+  background-color: lightblue;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
+
+.added {
+  font-size: 12px;
+}
+
+/* FORM */
+.main-form {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+
